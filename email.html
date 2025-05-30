@@ -44,7 +44,7 @@
     </script> -->
 
   <body class="acs-body">
-    <main>
+    <main class="acs-main">
       <header class="acs-header">
         <!-----------------------------------------
             Engineers: 
@@ -155,10 +155,11 @@
           >
         </p>
       </section>
-      <footer class="acs-footer">
-        <p class="acs-label-1">Powered By</p>
-        <div class="d-flex align-items-center gap-2">
-          <!-----------------------------------------
+    </main>
+    <footer class="acs-footer">
+      <p class="acs-label-1">Powered By</p>
+      <div class="d-flex align-items-center gap-2">
+        <!-----------------------------------------
           Engineers: 
           - I have only commented this block out to test what the logo looks like.
           - The 'src' will need to be re-instated.
@@ -169,28 +170,26 @@
           class="acs-footer-logo"
         />
         ------------------------------------------>
-          <img
-            src="./assets/EA-Logo.png"
-            alt="Entersoft Academy"
-            class="acs-footer-logo"
-          />
-        </div>
-      </footer>
-    </main>
+        <img
+          src="./assets/EA-Logo.png"
+          alt="Entersoft Academy"
+          class="acs-footer-logo"
+        />
+      </div>
+    </footer>
 
     <script>
       function togglePasswordVisibility() {
-        const passwordInput = document.getElementById("passwordInput");
-        const passwordToggleIcon =
-          document.getElementById("passwordToggleIcon");
-        if (passwordInput.type === "password") {
-          passwordInput.type = "text";
-          passwordToggleIcon.classList.remove("bi-eye-slash");
-          passwordToggleIcon.classList.add("bi-eye");
+        const passwordInput = document.getElementById('passwordInput')
+        const passwordToggleIcon = document.getElementById('passwordToggleIcon')
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text'
+          passwordToggleIcon.classList.remove('bi-eye-slash')
+          passwordToggleIcon.classList.add('bi-eye')
         } else {
-          passwordInput.type = "password";
-          passwordToggleIcon.classList.remove("bi-eye");
-          passwordToggleIcon.classList.add("bi-eye-slash");
+          passwordInput.type = 'password'
+          passwordToggleIcon.classList.remove('bi-eye')
+          passwordToggleIcon.classList.add('bi-eye-slash')
         }
       }
     </script>

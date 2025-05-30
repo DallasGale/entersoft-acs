@@ -21,6 +21,10 @@ body.acs-body {
   font-family: 'Roboto', sans-serif;
 }
 
+main.acs-main {
+  min-height: calc(100vh - var(--acs-footer-height));
+}
+
 /* Sections  */
 .acs-header {
   position: sticky;
@@ -45,7 +49,7 @@ body.acs-body {
 }
 
 .acs-container {
-  padding: 5em 2em 15em;
+  padding: 5em 2em;
   text-align: center;
   width: 100%;
 }
@@ -137,7 +141,7 @@ body.acs-body {
 }
 
 .acs-footer-logo {
-  width: 100%;
+  width: 203px;
   height: 20px;
   position: relative;
 }
